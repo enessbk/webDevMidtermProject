@@ -1,0 +1,206 @@
+#first-line {
+    border: solid 1px rgb(51, 87, 99);
+    background-color: lightblue;
+    height: 3vh;
+  }
+  /* nav bar display flex and align items centerso 
+  that the item will be aligned in the center of the nav */
+  nav {
+    border: solid 1px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+  }
+  /* i used a pseudo selector to select all the image inside nav
+  */
+  nav img {
+    width: 4%;
+    margin: 20px;
+  }
+  /* */
+  nav a {
+    align-text: center;
+    font-size: 30px;
+    margin: 20px;
+  }
+  /* pseudo selector to the select the em child of em 
+  imade it absolute so tha i can put it on the right side of nav*/
+  nav > em {
+    position: absolute;
+    top: auto;
+    right: 30px;
+    width: 200px;
+    text-align: center;
+  }
+  /* section display flex*/
+  section {
+    border: solid 1px;
+    height: 100vh;
+    display: flex;
+  }
+  /* left section use flx in direction column and align it to the center */
+  #left {
+    border: solid 1px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* the all div children of the the left section the div where they hold coins*/
+  #left > div {
+    border: solid 1px;
+    margin: 20px;
+    width: 80%;
+    height: 8vh;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* */
+  #welcomeBank {
+    border: solid 1px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+  /* the sibling of the welcome bank */
+  #welcomeBank + div {
+    color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  /* select all o inside the div sibling of welcomebank id holder*/
+  #welcomeBank + div p {
+    color: blue;
+    width: 70%;
+  }
+  /* select all img children of the div sibling of welcomebank id holder*/
+  #welcomeBank + div > img {
+    position: absolute;
+    bottom: -200px;
+    right: 80px;
+  }
+  /*the middle section */
+  #middle {
+    border: solid 1px;
+    flex: 6;
+  }
+  /* */
+  #right {
+    border: solid 1px;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* hold the profile pictures and info*/
+  #profile {
+    border: solid 1px;
+    margin: 15px;
+    height: 25vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* select img children of profile id holder*/
+  #profile > img {
+    width: 30%;
+    margin: 10px;
+  }
+  /* select div children of profile id holder*/
+  #profile > div {
+    border: solid 1px;
+    width: 70%;
+    height: 10vh;
+    text-align: center;
+  }
+  /* */
+  #balance {
+    border: solid 1px;
+    margin: 15px;
+    height: 25vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* select div inside balance*/
+  #balance > div {
+    border: solid 1px;
+    margin: 10px;
+    height: 7vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+  /* select the img inside balance*/
+  #balance > img {
+    width: 40%;
+  }
+  /* */
+  #pastTransaction {
+    border: solid 2px;
+    margin: 15px;
+    height: 35vh;
+    width: 80%;
+    overflow: hidden;
+  }
+  /* select the div children of pastTransaction*/
+  #pastTransaction > div {
+    border: solid 2px;
+    margin: 15px;
+    height: 45px;
+  }
+  /* */
+  footer {
+    border: solid 1px;
+    height: 25vh;
+  }
+  /* */
+  #links {
+    height: 23vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* select the desencent div of links*/
+  #links div {
+    border: solid 3px;
+    width: 30%;
+    height: 13vh;
+    margin: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* select all  desendent of links*/
+  #links a {
+    font-size: 40px;
+    color: grey;
+  }
+  /* select all a wich they are preceded by a and desendent of links*/
+  #links a ~ a {
+    color: red;
+    opacity: 0.2;
+  }
+  /* select the next sibling div of links id holder */
+  #links + div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
